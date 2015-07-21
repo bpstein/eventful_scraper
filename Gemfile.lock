@@ -27,6 +27,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.8)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
     coffee-rails (4.0.1)
@@ -37,6 +38,10 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     erubis (2.7.0)
+    eventful_api (0.0.1)
+      addressable (~> 2.3.4)
+      multi_json (~> 1.5.0)
+      oauth (~> 0.3.6)
     execjs (2.5.2)
     hike (1.2.3)
     i18n (0.7.0)
@@ -52,7 +57,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (5.6.1)
-    multi_json (1.11.0)
+    multi_json (1.5.1)
+    oauth (0.3.6)
+      ruby-hmac (>= 0.3.1)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.3)
@@ -75,6 +82,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
+    ruby-hmac (0.4.0)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -114,8 +122,10 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  eventful_api
   jbuilder (~> 2.0)
   jquery-rails
+  multi_json (~> 1.5.0)
   rails (= 4.1.4)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
